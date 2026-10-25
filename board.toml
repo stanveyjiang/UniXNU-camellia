@@ -4,7 +4,7 @@
 "name" = "camellia"
 "soc" = "MT6833"
 "description" = "Redmi Note 10 5G"
-"kit" = "camellia"
+"kit" = "sheng"
 "os_profile" = "ipados-17.7.11-21H461"
 
 ["ipsw"]

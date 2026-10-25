@@ -11,6 +11,10 @@ input, GPU, Wi-Fi and power components. Camellia hardware integration lives in
 `uefi-camellia`, the native UFS work and the device diagnostics maintained under
 `/home/jiangshihao/unixnu`.
 
+The internal kit name remains `sheng` because the bootstrap archives reuse
+shared prelink and diagnostic helper sources from that package. It does not
+select Sheng hardware or an SM8550 device tree.
+
 Build the kernel from a UniXNU checkout:
 
 ```sh
