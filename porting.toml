@@ -10,7 +10,7 @@ summary = "Redmi Note 10 5G UEFI bring-up is device-verified through a Linux pre
 id = "configuration"
 status = "implemented"
 components = ["ArmDTPlatform", "ArmCpu", "SoftwareAES", "XnuPrelink", "DarwinBoot"]
-paths = ["board.toml", "feeds.toml", "configs/**", "package/unixnu.toml", ".gitattributes"]
+paths = ["board.toml", "feeds.toml", "configs/**", "package/unixnu.toml", ".gitattributes", ".github/**"]
 inputs = ["MT6833 platform identity, iPad7,1 / iPadOS 17.7.11 build 21H461 target identity and the Camellia bootstrap defconfig."]
 configuration = ["board.soc = MT6833; board.os_profile = ipados-17.7.11-21H461; schema_version = 2.", "camellia_bootstrap_defconfig enables the shared ARM DT platform, FDT CPU, software AES, mockfs, panic region and prelinked crypto paths."]
 procedure = ["Run ./unixnu defconfig camellia_bootstrap_defconfig --device ../UniXNU-camellia from a UniXNU checkout.", "Run ./unixnu status --device ../UniXNU-camellia --json and inspect the effective component and source pins."]
